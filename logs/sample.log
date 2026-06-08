@@ -1,0 +1,7 @@
+INFO Application Started
+INFO Database Connected
+WARN High Memory Usage
+ERROR Database Timeout
+INFO User Login Successful
+ERROR Authentication Failed
+WARN Disk Space Low
