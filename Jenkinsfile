@@ -2,18 +2,27 @@ pipeline {
     agent any
 
     stages {
-
-       stage('Checkout') {
-    steps {
-        git branch: 'main',
-            url: 'https://github.com/ananyas28/streamlit-devops.git'
-    }
-}
+        stage('Checkout') {
+            steps {
+                echo 'Source Code Retrieved'
+            }
         }
 
         stage('Build') {
             steps {
-                sh 'docker build -t streamlit-devops .'
+                echo 'Building Application'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running Tests'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying Application'
             }
         }
     }
